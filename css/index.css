@@ -20,7 +20,7 @@ a {
 }
 
 body {
-	font-family: 'Cinzel', serif;
+	font-family: 'IBM Plex Sans JP', sans-serif;
     font-size: 16px;
     color: #000000;
     line-height: 1;
@@ -73,14 +73,23 @@ header {
 	header {width: 13%;}
 }
 
-header h1 {
+.top-img {
+	/* position: absolute;
+	width: 70%;
+	height: 70%;
+	margin-top: 30%;
+	margin-bottom: auto;
+	display: inline-block;
+	justify-content: center;
+	text-align: center; */
 	position: absolute;
-	display: block;
-	width: 102px;
-	height: 109px;
-	top: 50%;
-	left: 50%;
-	margin: -220px 0 0 -51px;
+	top: 5%;
+	right: 0;
+	/* bottom: 0; */
+	left: 0;
+	margin: auto;
+	width: 80%;
+	height: 3.2rem;
 }
 
 header nav {
@@ -119,6 +128,7 @@ header nav ul li.current a {
 }
 
 /* main */
+/* トップ画像 */
 .main {
 	width: 87%;
 	margin-left: auto;
@@ -142,27 +152,142 @@ h1 {
 	padding-top: 50px;
 }
 
-.content {
-	width: 1200px;
-	max-width: 90%;
+/* works */
+.works01 {
+	background-color: #ffe5cc;
+	padding: 60px;
+}
+
+.works01 h1 {
+	font-size: 25px;
+}
+
+.works01-flex {
+	display: flex;
+}
+
+.works02-flex {
+	display: flex;
+	background-color: #cce5ff;
+	padding: 55px;
+}
+
+.works03-flex {
+	display: flex;
+	background-color: #d5d5d5;
+	padding: 55px;
+}
+
+.works-text {
+	width: 50%;
+	margin-top: 20px;
+}
+
+.works-text h3 {
+	font-size: 22px;
+}
+
+.works-text h4 {
+	margin-top: 22px;
+	font-size: 20px;
+}
+
+.works-text p{
+	margin-top: 14px;
+	font-size: 18px;
+	line-height: normal;
+}
+
+.works-img {
+	width: 40%;
 	margin-left: auto;
+	margin-right: 10px;
+}
+
+/* 以下content */
+.content {
+	width: 87%;
+	margin-left: 60px;
 	margin-right: auto;
 }
 
-/* works */
-.works {
-	margin-top: 120px; 
+.content h2 {
+	font-size: 25px;
 }
 
-.works01 {
-	display: flex;
-	background-color: #a3d1ff;
-	margin-top: 30px;
-	padding: 55px;
-	border-radius: 20px;
+.content h3 {
+	font-size: 20px;
 }
 
 /* about */
-.about-profile {
-	margin-top: 120px;
+.about {
+	margin-top: 80px;
+}
+
+.about h3 {
+	font-size: 20px;
+	margin-top: 30px;
+}
+
+.about p {
+	font-size: 16px;
+    line-height: normal;
+}
+
+.profile {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+
+.profile h2 {
+	font-size: 22px;
+}
+
+.profile-text {
+	width: 60%;
+}
+
+.profile-img {
+	width: 30%;
+    display: block;
+	margin-left: 40px;
+	margin-right: auto;
+}
+
+.profile-img img {
+    max-width: 360px;
+}
+
+.profile dl {
+    margin-top: 30px;
+	margin-left: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 16px;
+    line-height: normal;
+}
+
+.profile dl dt{
+    width: 30%;
+}
+
+.profile dl dd {
+    width: 70%;
+}
+
+/* contact */
+.contact {
+	margin-top: 80px;
+	padding-bottom: 80px;
+}
+
+.contact a {
+	display: inline-block;
+	margin-top: 30px;
+	font-size: 18px;
+}
+
+.contact a:hover {
+	color: #d3381c;
 }

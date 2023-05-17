@@ -10,17 +10,16 @@
   <link rel="stylesheet" href="./css/index.css">
   <!-- フォント -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Baumans&family=Cinzel&family=Lato:ital@1&family=Orbitron&family=Prosto+One&family=Roboto&family=Zen+Kaku+Gothic+Antique&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP&display=swap" rel="stylesheet">
 </head>
 <body>
   
   <!--　ヘッダーから -->
   <header>
-    <h1>
-    </h1>
-    <a href="index.html"><img src="" alt="タイトル画像" /></a>
-
+    <div class="top-img">
+      <a href="index.html"><img src="images/logo.jpg" alt="タイトル画像" /></a>
+    </div>
     <nav>
       <ul class="clearfix">
         <li id="gnav01">
@@ -44,56 +43,93 @@
         <h1>MASAKAZU INOUE</h1>
       </div>
     </div>
-    <div class="content">
-
-      <div id="works" class="works">
-        <h2>WORKS</h2>
-        <div class="works01">
-          <div>
-            <h3>Inoue Masakazu</h3>
-            <p>
-              就職活動を進めていく中で、なにかアピールできるものが欲しいと考えていました。<br>履歴書を制作している時に、IT業界に転職するのであれば履歴書もWebサイトとして提出できれば面白いのでは？と、思い付き制作致しました。
-            </p>
-          </div>
-          <div>
-            <a href="http://127.0.0.1:5501/index.html">
-              <img src="images/Inoue Masakazu-top.jpg" alt="">
-            </a>
-          </div>
+    <div id="works" class="works01">
+      <h2>WORKS</h2>
+      <div class="works01-flex">
+        <div class="works-text">
+          <h3>Portfolioサイト</h3>
+          <p class="p-top">
+            本サイトです。僕が制作した作品を、まとめてご紹介できるように制作しました。
+          </p>
+          <h4>Concept</h4>
+          <p>
+            縦置きタイプのヘッダーが存在することを知り、自分でも再現したいと考えて制作を始めています。<br>
+          </p>
+        </div>
+        <div class="works-img">
+          <a href="https://inouemasakazu.github.io/portfolio" target="_blank">
+            <img src="images/Masakazu　Inoue.png" alt="ポートフォリオサイト">
+          </a>
         </div>
       </div>
-      <div id="about" class="about-profile">
-        <div class="about-profile-text">
-          <h2>ABOUT</h2>
-          <h3>このサイトについて</h3>
-          <p>
-            このサイトは、井上正一のポートフォリオ（作品集）です。本サイトでは自身の個人制作のサイトを掲載しています。
-          </p>
-          <dl>
-            <dt>名前</dt>
-            <dd>井上 正一　いのうえ まさかず</dd>
-            <dt>現在</dt>
-            <dd>就職活動中</dd>
-            <dt>email</dt>
-            <dd>go.tetuzinn28g@gmail.com</dd>
-            <dt>学習中の言語等</dt>
-            <dd>HTML/CSS、JAVA(サーブレット/jsp)、SQL</dd>
-            <dt>趣味</dt>
-            <dd>サイクリング　ウォーキング　映画鑑賞　料理</dd>
-          </dl>
-        </div>
-        <h3>VISION</h3>
-        <h4>これまで</h4>
-        <p>
-          昔から物を作ったり、絵を描いたりすることが好きでした。<br>レゴで創作作品を作ったり、時計やカメラといった小さな機械を分解し、構造を観察しては組み立てる、そんなことをして遊んでいた子供でした。<br>学年が上がるにつれて、美術の授業で描いた絵が市の展覧会に並ぶこともありました。<br>
-          働き出してからは建築業界で、内装施工職人として
+    </div>
+    <div class="works02-flex">
+      <div class="works-text">
+        <h3>Webレジュメサイト</h3>
+        <p class="p-top">
+          就職活動をしていくうえでアピールできるものが欲しいと考えました。<br>IT業界に転職するのであれば、履歴書と職務経歴書をWebサイトとして提出できると面白いのでは？そんな発想から制作しています。
         </p>
-        <h4>これから</h4>
-        <div id="contact">
-          <h2>contact</h2>
+        <h4>Concept</h4>
+        <p>
+          履歴書として制作を始めました。フレッシュさがあり力強くエネルギーあふれる人物だと感じてもらえるように、青空をバックにした自身の画像をヘッダーにかぶせて画面全体に配置しています。<br>若く元気な印象を与えたかったので、トップ画像の青空にあわせて全体を空色で構成しています。<br>
+        </p>
+      </div>
+      <div class="works-img">
+        <a href="" target="_blank">
+          <img src="images/Inoue Masakazu-top.jpg" alt="井上正一自己紹介サイト">
+        </a>
+      </div>
+    </div>
+    <div class="works03-flex">
+      <div class="works-text">
+        <h3>動的webサイト</h3>
+        <p>
+          職業訓練でJavaの学習を行い、サーブレット/jspを使い制作をしました。<br>5人1組のチームで実務に沿って、要件の分析やロバストネス図、画面遷移図の作成をしてコーディング作業に入っています。<br>サーブレットは主に、登録や削除、条件チェックをするActionのコーディング、jsp/cssのデザインはすべて僕が担当しています。
+        </p>
+        <h4>Concept</h4>
+        <p>
+          映像メディアの、閲覧/登録、ユーザー登録/ログイン/ユーザー削除/レビューの投稿・削除、管理者ログイン/管理者削除/管理者の追加登録/レビューの削除等を実装しています。
+        </p>
+      </div>
+      <div class="works-img">
+        <a href="" target="_blank">
+          <img src="images/Get Money() method.jpg" alt="映画レビューサイト">
+        </a>
+      </div>
+    </div>  
+    <div class="content">
+      <div id="about" class="about">
+        <h2>ABOUT</h2>
+        <h3>このサイトについて</h3>
+        <p>
+          このサイトは、井上正一のポートフォリオ（作品集）です。本サイトでは井上が制作したサイトを掲載しています。<br>現在、HTML/CSS/Java(サーブレット/jsp)で学習した内容をもとにした作品を紹介していますが、今後も必要な知識やスキルをみにつけて<br>今よりも優れた作品が制作できるように学習に取り組んでいきます。
+        </p>
+        <div class="profile">
+          <div class="profile-text">
+            <h2>Profile</h2>
+            <dl>
+              <dt>名前</dt>
+              <dd>井上 正一　いのうえ まさかず</dd>
+              <dt>生年月日</dt>
+              <dd>1994年4月23日</dd>
+              <dt>居住地</dt>
+              <dd>千葉県市川市</dd>
+              <dt>email</dt>
+              <dd>go.tetuzinn28g@gmail.com</dd>
+              <dt>学習中の言語等</dt>
+              <dd>HTML/CSS、JAVA(サーブレット/jsp)<br>SQLデータベース、Git/GitHub</dd>
+              <dt>趣味</dt>
+              <dd>サイクリング　ウォーキング　映画鑑賞　料理</dd>
+            </dl>
+          </div>
+          <div class="profile-img">
+            <img src="images/about.JPG" alt="顔写真">
+          </div>
+        </div>
+        <div id="contact" class="contact">
+          <h2>CONTACT</h2>
           <p><a href="mailto:go.tetuzinn28g&#64;gmail.com">お問い合わせはこちらから</a></p>
         </div>
-
       </div>
     </div>
   </main>
