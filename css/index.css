@@ -204,6 +204,10 @@ h1 {
 	margin-right: 10px;
 }
 
+a img:hover {
+	opacity: 0.8;
+  }
+  
 /* 以下content */
 .content {
 	width: 87%;
